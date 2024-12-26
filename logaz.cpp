@@ -169,7 +169,13 @@ private:
             csv_file.close();
         }
 
-        
+        void reset()
+        {
+            parsed_logs.clear();
+            error_counts.clear();
+            ip_access_count.clear();
+            unique_ips.clear();
+        }
     };
 
     int main(int argc, char *argv[])
